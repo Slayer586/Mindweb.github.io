@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+        }
+        .showtime{
+            border: 2px solid red;
+            padding: 10px;
+            background-color: antiquewhite;
+            text-align: center;
+            color: red;
+        }
+
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="showtime">
+        The date and time is <span id="time"></span> -->
+    </div>
+    <div>
+        <img src="number table.png" alt="We are sorry" height="700px" width="1500px">
+    </div>
+    <script>
+        setInterval(updatetime, 1000);
+        function updatetime(){
+            time.innerHTML=new Date();
+        }
+    </script>
+</body>
+</html>

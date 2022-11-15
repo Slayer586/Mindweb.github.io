@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabets</title>
+    <style>
+        .div{
+            display: grid;
+            align-content: center;
+            grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px ;
+            grid-template-rows: 30px 30px 30px;
+            row-gap: 10px;
+            justify-content: center;
+            background-color: rgb(234, 143, 234);
+            border: 2px solid black;
+            border-radius: 50px;
+            margin-bottom: 5px;
+            width: 700px;
+            height: 150px;
+        }
+
+        .capalpha{
+            background-color: rgb(168, 164, 164);
+            width: 2rem;
+            cursor: pointer;
+            border-radius: 1rem;
+            padding: 5px;
+        }
+
+        .capalpha:hover{
+            border: 2px solid rgb(249, 125, 114);
+            background-color: rgb(163, 155, 155);
+            animation: glow 1s 0s infinite ;
+        }
+
+        @keyframes anime{
+            0%{
+                opacity:0;
+            }
+            20%{
+                opacity: 0.2;
+            }
+            40%{
+                opacity: 0.4;
+            }
+            60%{
+                opacity: 0.6;
+            }
+            80%{
+                opacity: 0.8;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        @keyframes glow {
+            0%{
+                background-color: rgb(168, 164, 164) ;
+            }
+            
+            50%{
+                background-color: rgb(149, 251, 149);
+            }
+            
+            100%{
+                background-color: rgb(168, 164, 164);
+            }
+            
+        }
+
+        .capalpha{
+            animation-name: anime;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+        }
+
+    #blanckarea{
+        display: grid;
+        justify-content:center;
+        grid-template-columns:20px 200px 20px 200px 20px 200px 20px 200px 20px 200px 20px auto;
+        grid-template-rows: 110px 110px 110px 110px 110px auto;
+        height: 700px;
+        width: auto;
+        border: 2px solid black;
+        background-color: rgb(247, 183, 183);
+        border-radius: 50px;
+        
+    }
+
+    .template{
+        justify-self: right;
+    }
+
+    .written{
+        display: flex;
+        float: right;
+        width: 700px;
+        height: 150px;
+        /* background-color: rgb(166, 87, 240); */
+        border-radius: 50px;
+        align-items: center;
+        justify-content: center;
+        font-size:xxx-large;
+        border: 3px solid rgb(166, 87, 240);
+        
+    }
+    
+
+
+    </style>
+</head>
+
+<body>
+    <div class="written">
+        <p id="writing">spellings will be here</p>
+    </div>
+    <div class="div">
+        
+        <button class="capalpha" id="alphaA" onclick="A()+speakA()+spells('A For Apple')">Aa</button>
+        <button class="capalpha" id="alphaB" onclick="B()+speakB()">Bb</button>
+        <button class="capalpha" id="alphaC" onclick="C()+speakC()">Cc</button>
+        <button class="capalpha" id="alphaD" onclick="D()+speakD()">Dd</button>
+        <button class="capalpha" id="alphaE" onclick="E()+speakE()">Ee</button>
+        <button class="capalpha" id="alphaF" onclick="F()+speakF()">Ff</button>
+        <button class="capalpha" id="alphaG" onclick="G()+speakG()">Gg</button>
+        <button class="capalpha" id="alphaH" onclick="H()+speakH()">Hh</button>
+        <button class="capalpha" id="alphaI" onclick="I()+speakI()">Ii</button>
+        <button class="capalpha" id="alphaJ" onclick="J()+speakJ()">Jj</button>
+        <button class="capalpha" id="alphaK" onclick="K()+speakK()">Kk</button>
+        <button class="capalpha" id="alphaL" onclick="L()+speakL()">Ll</button>
+        <button class="capalpha" id="alphaM" onclick="M()+speakM()">Mm</button>
+        <button class="capalpha" id="alphaN" onclick="N()+speakN()">Nn</button>
+        <button class="capalpha" id="alphaO" onclick="O()+speakO()">Oo</button>
+        <button class="capalpha" id="alphaP" onclick="P()+speakP()">Pp</button>
+        <button class="capalpha" id="alphaQ" onclick="Q()+speakQ()">Qq</button>
+        <button class="capalpha" id="alphaR" onclick="R()+speakR()">Rr</button>
+        <button class="capalpha" id="alphaS" onclick="S()+speakS()">Ss</button>
+        <button class="capalpha" id="alphaT" onclick="T()+speakT()">Tt</button>
+        <button class="capalpha" id="alphaU" onclick="U()+speakU()">Uu</button>
+        <button class="capalpha" id="alphaV" onclick="V()+speakV()">Vv</button>
+        <button class="capalpha" id="alphaW" onclick="W()+speakW()">Ww</button>
+        <button class="capalpha" id="alphaX" onclick="X()+speakX()">Xx</button>
+        <button class="capalpha" id="alphaY" onclick="Y()+speakY()">Yy</button>
+        <button class="capalpha" id="alphaZ" onclick="Z()+speakZ()">Zz</button>
+    </div>
+    <!-- <div class="written"></div> -->
+    
+
+
+
+    <!-- <button class="clearprev" onclick="clear()">Clear Screen</button> -->
+    
+    
+    <div id="blanckarea">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
